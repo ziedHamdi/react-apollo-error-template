@@ -14,10 +14,24 @@
     "graphql-tag": "^2.10.1",
     "react": "^16.8.6",
     "react-apollo": "2.5.3",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "apollo-boost": "^0.1.10",
+    "apollo-link-context": "^1.0.9",
+    "node-fetch": "latest",
+    "react-router-dom": "^4.3.1",
+    "express-graphql": "^0.6.12",
+    "@babel/core": "latest",
+    "@babel/node": "latest",
+    "@babel/preset-env": "latest",
+    "@babel/preset-react": "latest",
+    "@babel/runtime": "^7.4.4",
+    "babel-plugin-graphql-tag": "^2.1.0",
+    "babel-plugin-css-modules-transform": "^1.6.2",
+    "@babel/plugin-proposal-class-properties": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
+    "startSsr": "babel-node ./src/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "deploy": "PUBLIC_URL=/react-apollo-error-template/$(git symbolic-ref --short HEAD) npm run build && gh-pages-clean && gh-pages -d build --dest $(git symbolic-ref --short HEAD) --remote"

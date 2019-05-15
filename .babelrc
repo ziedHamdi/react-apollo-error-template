@@ -1,0 +1,5 @@
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "plugins": ["@babel/plugin-proposal-class-properties", "graphql-tag", ["css-modules-transform", { "extensions": [ ".svg", ".css" ] } ] ], 
+  "ignore": ["node_modules"]
+}
